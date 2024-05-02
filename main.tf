@@ -32,7 +32,7 @@ resource "aws_instance" "app_server" {
     Name         = var.instance_name
     Client       = "Internal"
     Project      = "DOB"
-    Owner        = "Myles"
+    Owner        = "Myles McChillington"
     Appliocaiton = "app_server"
     Environment  = "test"
   }
