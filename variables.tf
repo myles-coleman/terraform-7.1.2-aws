@@ -4,11 +4,11 @@ variable "instance_name" {
   default     = "MylesExampleApp"
 }
 
-# variable "vpc_name" {
-#   description = "Name of VPC"
-#   type        = string
-#   default     = "meher-dob-vpc"
-# }
+variable "vpc_name" {
+  description = "Name of VPC"
+  type        = string
+  default     = "myles-dob-vpc"
+}
 
 variable "vpc_cidr" {
   description = "CIDR block for VPC"
