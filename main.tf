@@ -50,7 +50,13 @@ module "ec2_instance" {
     Client       = "Internal"
     Project      = "DOB"
     Owner        = "Myles"
-    Appliocaiton = "app_server"
+    Applicaiton = "app_server"
     Environment  = "test"
   }
+}
+
+module "website_s3_bucket" {
+  source = "./modules/s3-bucket"
+
+  bucket_name = "mcoleman-bucket"
 }

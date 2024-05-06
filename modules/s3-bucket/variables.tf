@@ -1,0 +1,17 @@
+variable "bucket_name" {
+  description = "Name of the s3 bucket. Must be unique."
+  type        = string
+  default = "mcoleman-bucket"
+}
+
+variable "tags" {
+  description = "Tags to set on the bucket."
+  type        = map(string)
+  default = {
+    Client       = "Internal"
+    Project      = "DOB"
+    Owner        = "Myles"
+    Appliocaiton = "app_server"
+    Environment  = "test"
+  }
+}
